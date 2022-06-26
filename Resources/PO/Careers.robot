@@ -77,7 +77,7 @@ Logging_console
     FOR     ${ELEMENT}       IN RANGE    1    ${q}
 
    ${X}   get text     (//h2[contains(@class,'card-jobsHot__title')])[${ELEMENT}]
-   ${Y}     get text    ((//a[@class='card-jobsHot__link'])[${ELEMENT}]
+   ${Y}     get text    (//a[@class='card-jobsHot__link'])[${ELEMENT}]
     log to console   Position : ${X}
     log to console   More info : ${Y}
    END
